@@ -190,6 +190,7 @@ public final class DashboardDataManager extends ContextualObject {
         if(oldBitmapDrawable != null && newBitmapDrwable != null){
            return isDuplicateBitmap(oldBitmapDrawable.getBitmap(), newBitmapDrwable.getBitmap());
         }
+        Log.d("TEST", "Testing");
         return false;
     }
 
