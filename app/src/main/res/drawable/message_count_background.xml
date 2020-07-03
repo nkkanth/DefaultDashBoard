@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size
+        android:width="@dimen/view_message_count_size_width"
+        android:height="@dimen/view_message_count_size_height" />
+    <solid android:color="@color/more_chapter_message_count_background_color" />
+    <stroke
+        android:width="@dimen/view_message_count_stroke_width"
+        android:color="@color/more_chapter_shelf_icon_background_color" />
+
+</shape>

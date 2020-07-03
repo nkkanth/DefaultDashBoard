@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/apps_chapter_country_item_icon"
+        android:layout_width="@dimen/apps_chapter_country_item_image_width_default"
+        android:layout_height="@dimen/apps_chapter_country_item_image_height_default"
+        android:layout_centerInParent="true"
+        android:background="@color/apps_chapter_shelf_icon_background_color"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:textSize="64sp"/>
+</merge>

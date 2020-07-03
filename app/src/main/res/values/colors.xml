@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_background">#FF6B6C6C</color>
+    <color name="dashboard_initial_background_color">#FF323232</color>
+    <color name="top_menu_item_focus_background">#4c4f54</color>
+    <color name="shelf_icon_background_color">#222222</color>
+    <color name="shelf_header_icon_background_color">#4c4f54</color>
+    <color name="hovercard_subtitle_text_color">#a6a6a6</color>
+    <color name="more_chapter_shelf_icon_background_color">#4c4f54</color>
+    <color name="more_chapter_message_count_background_color">#eb212e</color>
+    <color name="apps_chapter_shelf_icon_background_color">#4c4f54</color>
+    <color name="vod_chapter_shelf_icon_background_color">#4c4f54</color>
+    <color name="vod_chapter_open_app_background_color">#4c4f54</color>
+
+    <color name="recommended_app_background_start_color">#000000</color>
+    <color name="recommended_app_background_center_color">#203420</color>
+    <color name="recommended_app_background_end_color">#140C0A</color>
+
+    <color name="hovercard_subtext_text_color">#66ffffff</color>
+
+    <!-- Side panel colors -->
+    <color name="side_panel_background_default">#003478</color>
+    <color name="side_panel_highlighted_text_color_default">#ffffffff</color>
+    <color name="side_panel_non_highlighted_text_color_default">#99ffffff</color>
+
+    <!-- Side panel colors for bfl -->
+    <color name="side_panel_background_default_bfl">#016b9f</color>
+
+    <!-- Thumbnail browser colors -->
+    <color name="thumbnail_text_background">#ff76d7d6</color>
+
+    <!-- Main background default value -->
+    <color name="main_background_default_color_filter">#002C3137</color>
+
+    <color name="google_account_icon_background_color">#21974a</color>
+    <color name="google_Account_icon_highlight_background">#4c4f54</color>
+
+    <!-- Country filter -->
+    <color name="country_filter_activity_background">#4c4f54</color>
+
+    <!--Smart Info -->
+    <color name="smart_info_shelf_item_background_color">#4c4f54</color>
+
+    <!-- Channels -->
+    <color name="channels_shelf_item_background_color">#4c4f54</color>
+
+    <!-- Apps -->
+    <color name="apps_shelf_item_background_color">#4c4f54</color>
+    <color name="apps_hover_card_subtitle_text_color">#66ffffff</color>
+
+    <!--App Recommendations -->
+    <color name="app_recommendations_shelf_item_background_color">#4c4f54</color>
+
+    <!-- Tv channels chapter-->
+    <color name="tv_channels_chapter_shelf_item_background_color">#4c4f54</color>
+
+    <color name="program_duration_progressbar_foreground">#3088B8</color>
+    <color name="program_duration_progressbar_background">#B1B1B1</color>
+
+
+    <!--   CAST Screen -->
+    <color name="cast_switch_on_track">#3088b8</color>
+    <color name="cast_switch_on_track_stroke">#EDEFF0</color>
+    <color name="cast_switch_off_track_stroke">#EDEFF0</color>
+    <color name="cast_switch_off_track">#e5e5e5</color>
+    <color name="switch_thumb_selector_outside_circle_color">#FCFCFC</color>
+    <color name="switch_thumb_selector_stroke">#0000ffff</color>
+    <color name="switch_thumb_inner_circle_color">#EDEFF0</color>
+
+
+    <color name="overlay_color">#80000000</color>
+    <color name="transparent_overlay_color">#00000000</color>
+
+    <color name="game_chapter_shelf_icon_background_color">#4c4f54</color>
+  <!--   weather -->
+	<color name="colorFF505862">#FF505862</color>
+<color name="colorFF1C1B19">#FF1C1B19</color>
+<color name="cloudy_day">#66303842</color>
+<color name="cloudy_night">#660c0c0c</color>
+<color name="fog_day">#66301c0a</color>
+<color name="fog_night">#66351903</color>
+<color name="mostly_cloudy_day">#661c446f</color>
+<color name="mostly_cloudy_night">#66111518</color>
+<color name="mostly_clear_day">#66004271</color>
+<color name="mostly_clear_night">#66010101</color>
+<color name="rain_and_snow_day">#66061823</color>
+<color name="rain_and_snow_night">#66061823</color>
+<color name="rain_day">#6629272c</color>
+<color name="rain_night">#66090908</color>
+<color name="showers_day">#661a3550</color>
+<color name="showers_night">#66070707</color>
+<color name="snow_day">#663b3b3b</color>
+<color name="snow_night">#66043b4f</color>	
+    <color name="thunderstorms_day">#66192639</color>
+    <color name="thunderstorms_night">#66221b23</color>
+	    <color name="sunny_day">#66003875</color>
+    <color name="sunny_night">#660e0e1c</color>
+	    <color name="unknown_day">#660a0a0a</color>
+    <color name="unknown_night">#660a0a0a</color>
+
+</resources>

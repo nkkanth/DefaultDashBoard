@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/app_recommendation_shelf_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_recommendation_shelf_item_height"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/app_recommendation_shelf_item_width"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/lock_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/app_recommendation_shelf_item_image"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_mychoice_lock"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/app_recommendation_shelf_item_text"
+        android:layout_width="@dimen/app_recommendation_shelf_item_text_width"
+        android:layout_height="@dimen/app_recommendation_shelf_item_text_height"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@org.droidtv.ui.htvstrings:string/HTV_DDB_OPEN_APP"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/app_recommendation_shelf_item_title_open_app_text_size"
+        android:visibility="gone"/>
+</merge>

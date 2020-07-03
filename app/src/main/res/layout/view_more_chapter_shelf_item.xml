@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/more_chapter_shelf_item_image_container"
+        android:layout_width="@dimen/more_chapter_shelf_item_image_width_default"
+        android:layout_height="@dimen/more_chapter_shelf_item_image_height_default"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/more_chapter_shelf_item_background_rounded"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/more_chapter_shelf_item_padding_default">
+
+        <ImageView
+            android:id="@+id/more_chapter_shelf_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/more_chapter_shelf_item_title"
+        android:layout_width="@dimen/more_chapter_shelf_item_text_width_default"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/more_chapter_shelf_item_image_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/more_chapter_shelf_item_title_margin_top"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingEnd="1dp"
+        android:paddingStart="1dp"
+        android:singleLine="true"
+        android:textAppearance="@style/FontStyleMoreChapterItemTitleDefault"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/message_notification_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/message_notification_text_view_margin_left"
+        android:layout_marginTop="@dimen/message_notification_text_view_margin_top"
+        android:background="@drawable/message_count_background"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/message_notification_text_view_text_size"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+</merge>

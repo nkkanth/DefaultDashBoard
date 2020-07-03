@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/overlay_color">
+
+    <RelativeLayout
+        android:layout_width="@dimen/country_filter_activity_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:background="@color/country_filter_activity_background">
+
+        <TextView
+            android:id="@+id/country_language_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/country_filter_header_margin_start"
+            android:layout_marginTop="@dimen/country_filter_header_margin_top"
+            android:fontFamily="sans-serif"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_WI_DASHBOARD_LANGUAGE_DESCRIPTION"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/country_filter_header_text_size"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/country_language_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country_language_header"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/country_filter_recycler_padding_bottom"
+            android:paddingEnd="@dimen/country_filter_recycler_padding_end"
+            android:paddingStart="@dimen/country_filter_recycler_padding_start"
+            android:paddingTop="@dimen/country_filter_recycler_padding_top"/>
+
+    </RelativeLayout>
+</FrameLayout>

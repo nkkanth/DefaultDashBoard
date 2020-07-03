@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@+id/cast_chapter_root"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/ready_sliding_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cast_chapter_sliding_text_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/cast_chapter_sliding_text_margin_top"
+        android:layout_marginStart="230dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:importantForAccessibility="no"
+        android:paddingEnd="@dimen/cast_chapter_sliding_text_container_padding_end"
+        android:paddingStart="@dimen/cast_chapter_sliding_text_container_padding_start">
+
+        <TextView
+            android:id="@+id/ready_slider_text_1"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_READY_TO_CAST_TEASER_TEXT_BUS_1"
+            android:textColor="@android:color/white"
+            android:importantForAccessibility="no"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"/>
+
+        <TextView
+            android:id="@+id/ready_slider_text_2"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_READY_TO_CAST_TEASER_TEXT_BUS_2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"
+            android:importantForAccessibility="no"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/ready_slider_text_3"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_READY_TO_CAST_TEASER_TEXT_BUS_3"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"
+            android:importantForAccessibility="no"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/ready_slider_text_4"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_READY_TO_CAST_TEASER_TEXT_BUS_4"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"
+            android:importantForAccessibility="no"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ready_slider_indicator_container"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/ready_sliding_text_container"
+        android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_container_margin_start"
+        android:layout_marginTop="@dimen/cast_chapter_sliding_indicator_container_margin_top"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/ready_slider_indicator_1"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+
+        <View
+            android:id="@+id/ready_slider_indicator_2"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+
+        <View
+            android:id="@+id/ready_slider_indicator_3"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+
+        <View
+            android:id="@+id/ready_slider_indicator_4"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/sliding_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cast_chapter_sliding_text_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/cast_chapter_sliding_text_margin_top"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:importantForAccessibility="no"
+        android:paddingEnd="@dimen/cast_chapter_sliding_text_container_padding_end"
+        android:paddingStart="@dimen/cast_chapter_sliding_text_container_padding_start">
+
+        <TextView
+            android:id="@+id/slider_text_1"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_DDB_CAST_TEASER_TEXT_1"
+            android:textColor="@android:color/white"
+            android:importantForAccessibility="no"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"/>
+
+        <TextView
+            android:id="@+id/slider_text_2"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_DDB_CAST_TEASER_TEXT_2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"
+            android:importantForAccessibility="no"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/slider_text_3"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_DDB_CAST_TEASER_TEXT_3"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"
+            android:importantForAccessibility="no"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/slider_text_4"
+            android:layout_width="@dimen/cast_chapter_sliding_text_width"
+            android:layout_height="@dimen/cast_chapter_sliding_text_height"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_DDB_CAST_TEASER_TEXT_4"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cast_chapter_sliding_text_size"
+            android:importantForAccessibility="no"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/slider_indicator_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliding_text_container"
+        android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_container_margin_start"
+        android:layout_marginTop="@dimen/cast_chapter_sliding_indicator_container_margin_top"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/slider_indicator_1"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+
+        <View
+            android:id="@+id/slider_indicator_2"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+
+        <View
+            android:id="@+id/slider_indicator_3"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+
+        <View
+            android:id="@+id/slider_indicator_4"
+            android:layout_width="@dimen/cast_chapter_sliding_indicator_width"
+            android:layout_height="@dimen/cast_chapter_sliding_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_sliding_indicator_margin_end"
+            android:layout_marginStart="@dimen/cast_chapter_sliding_indicator_margin_start"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/next_indicator_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/next_text_view_margin_end"
+        android:layout_marginTop="@dimen/next_text_view_margin_top"
+        android:fontFamily="sans-serif"
+        android:text="@org.droidtv.ui.strings:string/SKYPE_BUTTON_NEXT"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/next_text_view_text_size"/>
+
+    <ImageView
+        android:id="@+id/next_indicator"
+        android:layout_width="@dimen/next_arrow_image_width"
+        android:layout_height="@dimen/next_arrow_image_height"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/next_arrow_image_margin_end"
+        android:layout_marginTop="@dimen/next_arrow_image_margin_top"
+        android:src="@drawable/ic_arrow_white"/>
+
+    <ProgressBar
+        android:id="@+id/cast_secure_sharing_prepare_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/cast_connect_container_secure_sharing_enabled"
+        android:layout_width="@dimen/cast_info_circle_width"
+        android:layout_height="@dimen/cast_info_circle_height"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/cast_chapter_cast_connect_container"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/wifi_icon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/cast_screen_hotspot_image_margin_top"/>
+
+        <TextView
+            android:id="@+id/cast_connect_title"
+            android:layout_width="@dimen/cast_screen_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/cast_screen_title_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:lines="2"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_CONNECT_DEVICE"
+            android:textSize="@dimen/cast_screen_title_secure_sharing_enabled_text_size"/>
+
+        <TextView
+            android:id="@+id/cast_connect_network_name"
+            android:layout_width="@dimen/cast_screen_network_details_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/cast_screen_network_details_margin_end"
+            android:layout_marginStart="@dimen/cast_screen_network_details_margin_start"
+            android:layout_marginTop="@dimen/cast_screen_network_details_margin_top"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textSize="@dimen/cast_screen_network_details_text_size"
+            android:singleLine = "true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <TextView
+            android:id="@+id/cast_connect_network_password_title"
+            android:layout_width="@dimen/cast_screen_network_password_title_width"
+            android:layout_height="@dimen/cast_screen_network_password_title_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/cast_screen_network_password_title_margin_end"
+            android:layout_marginStart="@dimen/cast_screen_network_password_title_margin_start"
+            android:layout_marginTop="@dimen/cast_screen_network_password_title_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_HOTSPOT_PASSWORD"
+            android:textSize="@dimen/cast_screen_network_password_title_text_size"/>
+
+        <TextView
+            android:id="@+id/cast_connect_network_password"
+            android:layout_width="@dimen/cast_screen_network_password_details_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/cast_screen_network_password_details_margin_end"
+            android:layout_marginStart="@dimen/cast_screen_network_password_details_margin_start"
+            android:layout_marginTop="@dimen/cast_screen_network_password_details_margin_top"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textSize="@dimen/cast_screen_network_password_details_text_size"/>
+
+        <TextView
+            android:id="@+id/cast_connect_qr_code_title"
+            android:layout_width="@dimen/cast_screen_qr_code_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/cast_screen_qr_code_title_margin_end"
+            android:layout_marginStart="@dimen/cast_screen_qr_code_title_margin_start"
+            android:layout_marginTop="@dimen/cast_screen_qr_code_title_margin_top"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_MAIN_OR_SCAN_QR_CODE"
+            android:textSize="@dimen/cast_screen_qr_code_title_text_size"/>
+
+        <ImageView
+            android:id="@+id/cast_connect_qr_code_image"
+            android:layout_width="@dimen/cast_screen_qr_code_image_width"
+            android:layout_height="@dimen/cast_screen_qr_code_image_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/cast_screen_qr_code_image_margin_top"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cast_connect_container_secure_sharing_disabled"
+        android:layout_width="@dimen/cast_info_circle_width"
+        android:layout_height="@dimen/cast_info_circle_height"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/cast_chapter_cast_connect_container"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/no_secure_sharing_wifi_icon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/no_secure_sharing_cast_screen_hotspot_image_margin_top"/>
+
+        <TextView
+            android:id="@+id/no_secure_sharing_cast_connect_title"
+            android:layout_width="@dimen/cast_screen_title_width"
+            android:layout_height="@dimen/cast_screen_title_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/no_secure_sharing_cast_screen_title_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_USE_GOOGLE_CAST"
+            android:textSize="@dimen/cast_screen_title_text_size"/>
+
+        <TextView
+            android:id="@+id/no_secure_sharing_cast_connect_description"
+            android:layout_width="@dimen/cast_screen_network_title_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/cast_screen_network_title_margin_end"
+            android:layout_marginStart="@dimen/cast_screen_network_title_margin_start"
+            android:layout_marginTop="@dimen/no_secure_sharing_cast_screen_description_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_USE_WITH_SS_OFF"
+            android:textSize="@dimen/no_secure_sharing_cast_connect_description_text_size"/>
+
+        <TextView
+            android:id="@+id/no_secure_sharing_cast_connect_network_name"
+            android:layout_width="@dimen/cast_screen_network_details_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/cast_screen_network_details_margin_end"
+            android:layout_marginStart="@dimen/cast_screen_network_details_margin_start"
+            android:layout_marginTop="@dimen/no_secure_sharing_cast_screen_network_details_margin_top"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textSize="@dimen/cast_screen_network_details_text_size"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cast_ready_container"
+        android:layout_width="@dimen/cast_info_circle_width"
+        android:layout_height="@dimen/cast_info_circle_height"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/cast_chapter_cast_ready_container"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/google_cast_icon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ready_screen_cast_icon_margin_top"/>
+
+        <TextView
+            android:id="@+id/cast_ready_title"
+            android:layout_width="@dimen/ready_screen_title_text_width"
+            android:layout_height="@dimen/ready_screen_title_text_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/ready_screen_title_text_margin_end"
+            android:layout_marginStart="@dimen/ready_screen_title_text_margin_start"
+            android:layout_marginTop="@dimen/ready_screen_title_text_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_READY_TO_CAST"
+            android:textSize="@dimen/ready_screen_title_text_size"/>
+
+        <TextView
+            android:id="@+id/cast_ready_subtitle"
+            android:layout_width="@dimen/ready_screen_sub_title_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/ready_screen_sub_title_text_margin_end"
+            android:layout_marginStart="@dimen/ready_screen_sub_title_text_margin_start"
+            android:layout_marginTop="@dimen/ready_screen_sub_title_text_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/ready_screen_sub_title_text_line_spacing"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_CH_READY_TO_CAST"
+            android:textSize="@dimen/ready_screen_sub_title_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cast_view_indicator_container"
+        android:layout_width="@dimen/cast_chapter_cast_view_indicator_container_width"
+        android:layout_height="@dimen/cast_chapter_cast_view_indicator_container_height"
+        android:layout_marginStart="@dimen/cast_chapter_cast_view_indicator_container_margin_start"
+        android:layout_marginTop="@dimen/cast_chapter_cast_view_indicator_container_margin_top"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/cast_connect_indicator"
+            android:layout_width="@dimen/cast_chapter_cast_view_indicator_width"
+            android:layout_height="@dimen/cast_chapter_cast_view_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/cast_chapter_cast_view_indicator_margin_end"/>
+
+        <View
+            android:id="@+id/cast_ready_indicator"
+            android:layout_width="@dimen/cast_chapter_cast_view_indicator_width"
+            android:layout_height="@dimen/cast_chapter_cast_view_indicator_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/cast_chapter_cast_view_indicator_margin_start"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/compatibility_panel"
+        android:layout_width="@dimen/cast_compatibility_panel_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/compatibility_panel_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/cast_right_panel_image_view_margin_top"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="@dimen/cast_right_panel_image_text_size"/>
+
+        <TextView
+            android:id="@+id/compatibility_panel_google_cast_title"
+            android:layout_width="@dimen/cast_right_panel_title_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/cast_right_panel_title_view_margin_end"
+            android:layout_marginStart="@dimen/cast_right_panel_title_view_margin_start"
+            android:layout_marginTop="@dimen/cast_right_panel_title_view_margin_top"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:text="@org.droidtv.ui.strings:string/MAIN_TI_GOOGLECAST_SELECT_DEVICE"
+            android:textSize="@dimen/cast_right_panel_title_view_text_size"/>
+
+        <TextView
+            android:id="@+id/compatibility_panel_title"
+            android:layout_width="@dimen/cast_right_panel_compatibility_title_width"
+            android:layout_height="@dimen/cast_right_panel_compatibility_title_height"
+            android:layout_marginEnd="@dimen/cast_right_panel_compatibility_title_margin_end"
+            android:layout_marginStart="@dimen/cast_right_panel_compatibility_title_margin_start"
+            android:layout_marginTop="@dimen/cast_right_panel_compatibility_title_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_COMPATIBILITY_MODE"
+            android:textSize="@dimen/cast_right_panel_compatibility_title_text_size"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/cast_right_panel_compatibility_switch_container_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/cast_right_panel_compatibility_switch_margin_top">
+
+            <TextView
+                android:id="@+id/compatibility_panel_switch_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/cast_right_panel_compatibility_switch_off_margin_end"
+                android:layout_toStartOf="@+id/compatibility_panel_switch"
+                android:fontFamily="sans-serif"
+                android:text="@org.droidtv.ui.strings:string/MAIN_OFF_CAPS"
+                android:textSize="@dimen/cast_right_panel_compatibility_switch_text_size"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+            <Switch
+                android:id="@+id/compatibility_panel_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/cast_right_panel_compatibility_switch_height"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:switchMinWidth="@dimen/cast_right_panel_compatibility_switch_min_width"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/cast_switch_track_selector"/>
+
+            <TextView
+                android:id="@+id/compatibility_panel_switch_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/cast_right_panel_compatibility_switch_on_margin_start"
+                android:layout_toEndOf="@+id/compatibility_panel_switch"
+                android:fontFamily="sans-serif"
+                android:text="@org.droidtv.ui.strings:string/MAIN_ON_CAPS"
+                android:textSize="@dimen/cast_right_panel_compatibility_switch_text_size"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/compatibility_panel_toggle_title"
+            android:layout_width="@dimen/cast_right_panel_compatibility_toggle_title_width"
+            android:layout_height="@dimen/cast_right_panel_compatibility_toggle_title_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/cast_right_panel_compatibility_toggle_title_margin_end"
+            android:layout_marginStart="@dimen/cast_right_panel_compatibility_toggle_title_margin_start"
+            android:layout_marginTop="@dimen/cast_right_panel_compatibility_toggle_title_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_OK_TO_TOGGLE"
+            android:textSize="@dimen/cast_right_panel_compatibility_toggle_title_text_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/compatibility_panel_description"
+            android:layout_width="@dimen/cast_right_panel_compatibility_description_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cast_right_panel_compatibility_description_margin_bottom"
+            android:layout_marginEnd="@dimen/cast_right_panel_compatibility_description_margin_end"
+            android:layout_marginStart="@dimen/cast_right_panel_compatibility_description_margin_start"
+            android:layout_marginTop="@dimen/cast_right_panel_compatibility_description_margin_top"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="@org.droidtv.ui.htvstrings:string/HTV_GC_COMPATIBILITY_HELP"
+            android:textSize="@dimen/cast_right_panel_compatibility_description_margin_text_size"/>
+    </LinearLayout>
+</merge>

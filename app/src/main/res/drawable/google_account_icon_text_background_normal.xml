@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/view_google_account_text_background_circle_normal_value"
+                android:height="@dimen/view_google_account_text_background_circle_normal_value" />
+            <solid android:color="@color/google_account_icon_background_color" />
+
+        </shape>
+    </item>
+</layer-list>

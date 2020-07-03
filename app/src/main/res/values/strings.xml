@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Philips Professional TV</string>
+
+    <string name="MAIN_MSG_NO_USB_DEVICE_CONNECTED">No USB device connected.</string>
+
+    <!-- thumbnail browser -->
+    <string name="thumbnail_browser_default_image_name">Default</string>
+
+    <string name="edit_launcher_on">On</string>
+    <string name="edit_launcher_off">Off</string>
+    <string name="edit_launcher_revert_session_changes">Revert Session Changes</string>
+    <string name="edit_launcher_reset">Reset</string>
+	
+	<string name="MAIN_HOME">Home</string>
+	<string name="MAIN_TNC_Default_MSG_Title">Example Hotel T&amp;C</string>
+	<string name="MAIN_TNC_Default_MSG_BODY">By continuing, you agree with the terms and conditions as mentioned on http://www.examplehotel.com/wifiaccess </string>
+
+</resources>

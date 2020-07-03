@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="@dimen/view_google_account_text_background_circle_highlight_value"
+                android:height="@dimen/view_google_account_text_background_circle_highlight_value" />
+            <solid android:color="@color/google_Account_icon_highlight_background" />
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item>
+
+        <shape android:shape="oval">
+            <stroke
+                android:width="3dp"
+                android:color="@color/google_Account_icon_highlight_background" />
+            <solid android:color="@color/google_account_icon_background_color" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/clock_hours_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/top_menu_clock_item_time_margin_end"
+        android:focusable="false"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/top_menu_clock_item_time_margin_top"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/top_menu_clock_item_time_text_size"/>
+
+    <TextView
+        android:id="@+id/clock_am_pm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/top_menu_clock_item_label_margin_end"
+        android:layout_marginTop="@dimen/top_menu_clock_item_label_margin_top"
+        android:focusable="false"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/top_menu_clock_item_label_text_size"
+        android:visibility="gone" />
+
+</LinearLayout>

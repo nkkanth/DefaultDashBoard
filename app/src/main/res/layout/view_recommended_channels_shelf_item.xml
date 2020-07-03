@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/shelf_item_image"
+        android:layout_width="@dimen/recommended_chapter_recommended_channels_shelf_item_width"
+        android:layout_height="@dimen/recommended_chapter_recommended_channels_shelf_item_height"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"/>
+
+    <ProgressBar
+        android:id="@+id/program_info_progress_bar"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="@dimen/program_duration_progressbar_width"
+        android:layout_height="@dimen/program_duration_progressbar_height"
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_program_duration"
+        android:visibility="gone"/>
+
+</merge>

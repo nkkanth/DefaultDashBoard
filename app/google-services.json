@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "721291297406",
+    "project_id": "firebase-defaultdashboard"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721291297406:android:b75c90ea0faaad2a",
+        "android_client_info": {
+          "package_name": "org.droidtv.defaultdashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721291297406-c9rdcq8s3sg2pcl1s4sprsuuja5pbqp6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.droidtv.defaultdashboard",
+            "certificate_hash": "27196e386b875e76adf700e7ea84e4c6eee33dfa"
+          }
+        },
+        {
+          "client_id": "721291297406-qs2aptub3fr2ua9pj5kqis74dh7unrtv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkq0OB9w7rw8CShLxzKyXRP20gRIisjk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

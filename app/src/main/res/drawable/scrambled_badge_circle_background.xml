@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <size
+                android:width="20dp"
+                android:height="20dp"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@org.droidtv.ui.tvwidget2k15:drawable/channels_scrambled_icon_activated"
+            android:tint="@android:color/black">
+        </bitmap>
+    </item>
+
+</layer-list>
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Ids for top menu item Icons-->
+    <item name="top_menu_clockview" type="id"/>
+    <item name="top_menu_language_view" type="id"/>
+    <item name="top_menu_weather_view" type="id"/>
+    <item name="top_menu_alarm_view" type="id"/>
+    <item name="top_menu_bill_view" type="id"/>
+    <item name="top_menu_messages_view" type="id"/>
+    <item name="top_menu_user_view" type="id"/>
+    <item name="top_menu_assistant_view" type="id"/>
+</resources>

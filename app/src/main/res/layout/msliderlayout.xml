@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/org.droidtv.ui.tvwidget2k15"
+    android:id="@+id/SliderContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <org.droidtv.ui.tvwidget2k15.Slider
+        android:id="@+id/slider_alpha"
+        style="@org.droidtv.ui.tvwidget2k15:style/DefaultVerticalSlider"
+        android:layout_width="@dimen/color_multislider_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/color_multislider_leftpadding"
+        app:currentvalueDisplayTextStyle="@style/sliderCurrentValueTextAppearance"
+        app:minmaxvalueDisplayTextStyle="@style/sliderMinMaxValueTextAppearance"
+        app:sliderBarWidth="@dimen/color_multislider_bar_width"
+        app:sliderContainerWidth="@dimen/color_multislider_container_width" />
+
+    <org.droidtv.ui.tvwidget2k15.Slider
+        android:id="@+id/slider_red"
+        style="@org.droidtv.ui.tvwidget2k15:style/DefaultVerticalSlider"
+        android:layout_width="@dimen/color_multislider_width"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:currentvalueDisplayTextStyle="@style/sliderCurrentValueTextAppearance"
+        app:minmaxvalueDisplayTextStyle="@style/sliderMinMaxValueTextAppearance"
+        app:sliderBarWidth="@dimen/color_multislider_bar_width"
+        app:sliderContainerWidth="@dimen/color_multislider_container_width" />
+
+    <org.droidtv.ui.tvwidget2k15.Slider
+        android:id="@+id/slider_green"
+        style="@org.droidtv.ui.tvwidget2k15:style/DefaultVerticalSlider"
+        android:layout_width="@dimen/color_multislider_width"
+        android:layout_height="wrap_content"
+        app:currentvalueDisplayTextStyle="@style/sliderCurrentValueTextAppearance"
+        app:minmaxvalueDisplayTextStyle="@style/sliderMinMaxValueTextAppearance"
+        app:sliderBarWidth="@dimen/color_multislider_bar_width"
+        app:sliderContainerWidth="@dimen/color_multislider_container_width" />
+
+    <org.droidtv.ui.tvwidget2k15.Slider
+        android:id="@+id/slider_blue"
+        style="@org.droidtv.ui.tvwidget2k15:style/DefaultVerticalSlider"
+        android:layout_width="@dimen/color_multislider_width"
+        android:layout_height="wrap_content"
+        app:currentvalueDisplayTextStyle="@style/sliderCurrentValueTextAppearance"
+        app:minmaxvalueDisplayTextStyle="@style/sliderMinMaxValueTextAppearance"
+        app:sliderBarWidth="@dimen/color_multislider_bar_width"
+        app:sliderContainerWidth="@dimen/color_multislider_container_width" />
+
+
+</merge>

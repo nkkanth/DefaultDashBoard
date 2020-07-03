@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/empty_view"
+        android:layout_width="@dimen/hotel_logo_width"
+        android:layout_height="@dimen/hotel_logo_height"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:id="@+id/hotel_info_container_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hotel_logo_height"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/top_menu_items_container"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/location_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/location_name_margin_end"
+            android:layout_marginStart="@dimen/location_name_welcome_message_margin_start"
+            android:layout_marginTop="@dimen/location_name_margin_top"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/location_name_font_size"
+            android:textStyle="normal"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/welcome_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/location_name_view"
+            android:layout_marginEnd="@dimen/welcome_message_margin_end"
+            android:layout_marginStart="@dimen/location_name_welcome_message_margin_start"
+            android:layout_marginTop="@dimen/welcome_message_margin_top"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_message_font_size"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/top_menu_items_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_menu_height"
+        android:layout_alignParentEnd="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"></LinearLayout>
+</merge>

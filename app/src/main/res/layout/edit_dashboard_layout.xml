@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode android:id="@+id/edit_dashboard_menu"
+                                                              xmlns:android="http://schemas.android.com/apk/res/android"
+                                                              android:layout_width="wrap_content"
+                                                              android:layout_height="wrap_content"
+                                                              android:tag="Edit Dashboard Menu">
+
+    <org.droidtv.defaultdashboard.ui.optionsframework.ListOptionsNode
+        android:id="@+id/show_account_icon_setting"
+        data="@array/account_list_data"
+        data_id="@array/account_list_data_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="Show Account Icon">
+
+    </org.droidtv.defaultdashboard.ui.optionsframework.ListOptionsNode>
+
+    <org.droidtv.defaultdashboard.ui.optionsframework.ListOptionsNode
+        android:id="@+id/show_assistant_icon_setting"
+        data="@array/assistant_list_data"
+        data_id="@array/assistant_list_data_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="Show Assistant Icon">
+
+    </org.droidtv.defaultdashboard.ui.optionsframework.ListOptionsNode>
+
+    <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+        android:id="@+id/recommended_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="Recommended">
+
+        <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+            android:id="@+id/recommended_apps"
+            actionable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Select Apps"></org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+
+        <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+            android:id="@+id/app_recommendations"
+            actionable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Select App channels"></org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+    </org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+
+    <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+        android:id="@+id/user_interface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="User Interface Setting">
+
+        <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+            android:id="@+id/user_interface_back_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Background Panel">
+
+            <org.droidtv.defaultdashboard.ui.optionsframework.ListOptionsNode
+                android:id="@+id/user_interface_main_background_enabled_setting"
+                data="@array/main_background_enabled_setting_data"
+                data_id="@array/main_background_enabled_setting_data_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Enable">
+            </org.droidtv.defaultdashboard.ui.optionsframework.ListOptionsNode>
+
+            <org.droidtv.defaultdashboard.ui.optionsframework.MainBackgroundThumbnailBrowserNode
+                android:id="@+id/user_interface_main_background_image"
+                actionable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Background Image"></org.droidtv.defaultdashboard.ui.optionsframework.MainBackgroundThumbnailBrowserNode>
+
+            <org.droidtv.defaultdashboard.ui.optionsframework.BackgroundImageColorFilterNode
+                android:id="@+id/user_interface_main_background_color_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Background Image Filter"></org.droidtv.defaultdashboard.ui.optionsframework.BackgroundImageColorFilterNode>
+
+            <org.droidtv.defaultdashboard.ui.optionsframework.SharingBackgroundThumbnailBrowserNode
+                android:id="@+id/user_interface_cast_background_image"
+                actionable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Sharing"></org.droidtv.defaultdashboard.ui.optionsframework.SharingBackgroundThumbnailBrowserNode>
+
+        </org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+
+        <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+            android:id="@+id/user_interface_side_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Side Panel">
+
+            <org.droidtv.defaultdashboard.ui.optionsframework.HotelLogoThumbnailBrowserNode
+                android:id="@+id/side_panel_hotel_logo"
+                actionable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Logo"></org.droidtv.defaultdashboard.ui.optionsframework.HotelLogoThumbnailBrowserNode>
+
+            <org.droidtv.defaultdashboard.SidePanelBackgroundColorNode
+                android:id="@+id/side_panel_background_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Background Color"></org.droidtv.defaultdashboard.SidePanelBackgroundColorNode>
+
+            <org.droidtv.defaultdashboard.SidePanelHighlightedTextColorNode
+                android:id="@+id/side_panel_highlighted_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Highlighted Text Color"/>
+
+            <org.droidtv.defaultdashboard.SidePanelNonHighlightedTextColorNode
+                android:id="@+id/side_panel_non_highlighted_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="Non Highlighted Text Color"/>
+
+        </org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+
+        <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+            android:id="@+id/revert_session_changes"
+            actionable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/edit_launcher_revert_session_changes"></org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+
+        <org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode
+            android:id="@+id/reset_settings"
+            actionable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/edit_launcher_reset"></org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+
+    </org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>
+
+
+
+</org.droidtv.defaultdashboard.ui.optionsframework.OptionsNode>

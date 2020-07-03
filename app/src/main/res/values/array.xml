@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_list_data">
+        <item>@string/edit_launcher_off</item>
+        <item>@string/edit_launcher_on</item>
+    </string-array>
+
+    <integer-array name="account_list_data_id">
+        <item>101</item>
+        <item>102</item>
+    </integer-array>
+
+    <string-array name="assistant_list_data">
+        <item>@string/edit_launcher_off</item>
+        <item>@string/edit_launcher_on</item>
+    </string-array>
+
+    <integer-array name="assistant_list_data_id">
+        <item>101</item>
+        <item>102</item>
+    </integer-array>
+
+    <string-array name="main_background_enabled_setting_data">
+        <item>@string/edit_launcher_off</item>
+        <item>@string/edit_launcher_on</item>
+    </string-array>
+
+    <integer-array name="main_background_enabled_setting_data_id">
+        <item>101</item>
+        <item>102</item>
+    </integer-array>
+    <integer-array name="main_background_color_min_array">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="main_background_color_max_array">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>100</item>
+    </integer-array>
+    <integer-array name="main_background_color_step_array">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="main_background_color_label_array">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Opacity</item>
+    </string-array>
+
+    <integer-array name="color_min_array">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="color_max_array">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>100</item>
+    </integer-array>
+    <integer-array name="color_step_array">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="color_label_array">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Opacity</item>
+    </string-array>
+</resources>

@@ -1,0 +1,25 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dual_text_margin_top"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dual_text_padding_start"
+        android:textSize="@dimen/dual_text_text_size" />
+
+    <TextView
+        android:id="@+id/sub_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dual_text_margin_bottom"
+        android:layout_marginTop="@dimen/dual_text_margin_top"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/dual_text_padding_start"
+        android:paddingStart="@dimen/dual_text_padding_start"
+        android:gravity="center_vertical"
+        android:focusable="true"/>
+</merge>

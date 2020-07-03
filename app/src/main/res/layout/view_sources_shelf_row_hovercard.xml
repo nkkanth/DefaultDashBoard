@@ -1,0 +1,43 @@
+<LinearLayout android:id="@+id/hovercard_panel"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/hovercard_width"
+              android:layout_height="@dimen/hovercard_height"
+              android:layout_marginTop="@dimen/hovercard_margin_top"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hovercard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif"
+        android:gravity="top|start"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/hovercard_title_text_size"/>
+
+    <TextView
+        android:id="@+id/hovercard_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hovercard_subtext_margin_top"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="top|start"
+        android:maxLines="1"
+        android:textColor="@color/hovercard_subtext_text_color"
+        android:textSize="@dimen/hovercard_subtext_text_size"/>
+
+    <TextView
+        android:id="@+id/hovercard_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hovercard_description_margin_top"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:gravity="top|start"
+        android:maxLines="3"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/hovercard_description_text_size"/>
+</LinearLayout>

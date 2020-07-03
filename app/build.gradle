@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+	compileSdkVersion 24
+	buildToolsVersion '26.0.2'
+	defaultConfig {
+		applicationId "org.droidtv.defaultdashboard"
+		minSdkVersion 24
+		targetSdkVersion 26
+		versionCode 1
+		versionName "1.0"
+	}
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+	sourceSets { main { aidl.srcDirs = ['src/main/java/', 'src/main/java/'] } }
+	lintOptions {
+		abortOnError false
+	}
+}
+
+def getSdkDir() {
+	def sdkdir = "$System.env.ANDROID_HOME"
+	if (sdkdir == null) {
+		Properties properties = new Properties()
+		properties.load(project.rootProject.file('local.properties').newDataInputStream())
+		sdkdir = properties.getProperty('sdk.dir', null)
+		if (sdkdir == null)
+			throw new GradleException("SDK location not found. Define location with sdk.dir in the local.properties file.")
+	}
+	return sdkdir
+}
+
+def tpvision_sdk = getSdkDir() + "/extras/tpvision/sdk_addon/sdk.gradle";
+
+apply from: tpvision_sdk
+
+dependencies {
+	compile fileTree(include: ['*.jar'], dir: 'libs')
+	compile 'com.android.support:leanback-v17:26.1.0'
+	compile files('libs/jedijar.jar')
+	compile files('libs/hotspot.jar')
+	compile 'com.google.android.gms:play-services-auth:11.8.0'
+	compile 'com.github.kenglxn.QRGen:android:2.4.0'
+}
+apply plugin: 'com.google.gms.google-services'

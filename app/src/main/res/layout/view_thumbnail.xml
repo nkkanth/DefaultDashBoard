@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/thumbnail_imageview"
+        android:layout_width="@dimen/thumbnail_imageview_width"
+        android:layout_height="@dimen/thumbnail_imageview_height"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/thumbnail_metadata_container"
+        android:layout_width="@dimen/thumbnail_text_container_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/thumbnail_text_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/thumbnail_image_name_textview"
+            android:layout_width="@dimen/thumbnail_image_name_textview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/thumbnail_image_name_textview_margin_start"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingEnd="@dimen/thumbnail_image_name_textview_padding_end"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/thumbnail_image_name_textview_text_size"/>
+
+        <TextView
+            android:id="@+id/thumbnail_image_resolution_textview"
+            android:layout_width="@dimen/thumbnail_image_resolution_textview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/thumbnail_image_resolution_textview_text_size"/>
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/app_recommendations_shelf_item_background_color" />
+    <size android:layout_width="@dimen/app_recommendation_shelf_item_text_width"
+        android:layout_height="@dimen/app_recommendation_shelf_item_text_height" />
+</shape>

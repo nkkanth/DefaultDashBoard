@@ -1,0 +1,211 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+          package="org.droidtv.defaultdashboard"
+          android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.HDMI_CEC"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_INTENT_SENDER_INTENT"/>
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA"/>
+    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
+    <uses-permission android:name="org.droidtv.tv.smarttv.permission.UPDATE_ADVERTISEMENT"/>
+    <uses-permission android:name="org.droidtv.permission.TPVISION_BROADCASTS" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true"/>
+
+    <uses-sdk
+            android:minSdkVersion="17" />
+
+    <application
+        android:name=".DashboardApplication"
+        android:allowBackup="true"
+        android:banner="@mipmap/ic_banner"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Leanback">
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library android:name="org.droidtv.ui.strings" />
+        <uses-library android:name="org.droidtv.ui.htvstrings" />
+        <uses-library android:name="org.droidtv.ui.tvwidget2k15" />
+
+        <activity
+            android:name="org.droidtv.defaultdashboard.DashboardActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|layoutDirection"
+            android:launchMode="singleTask"
+			android:label="@string/MAIN_HOME"
+            android:theme="@style/AppTheme.CustomTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+
+            <!--   Guest Menu -->
+            <intent-filter>
+                <action android:name="org.droidtv.intent.action.GUEST_MENU"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!--   Apps -->
+            <intent-filter>
+                <action android:name="org.droidtv.intent.action.APPS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!--   Edit mode Dashboard -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="com.philips.professionaldisplaysolutions.intent.category.CONFIG_HTV_HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!--   Default Dashboard -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="org.droidtv.intent.category.HTV_HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="org.droidtv.intent.action.DEFAULT_DASHBOARD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <intent-filter>
+                <!-- this intent filter is only for ATF test  -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.ThirdPartyActivity"/>
+
+        <activity
+            android:name=".AppRecommendationsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.Transparent.NoTitleBar"/>
+
+        <activity
+            android:name=".RecommendedAppsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.Transparent.NoTitleBar"/>
+
+        <activity
+            android:name=".MenuLanguageActivity"
+            android:label=""
+            android:configChanges="locale|layoutDirection"
+            android:theme="@style/AppTheme.Transparent.NoTitleBar"></activity>
+
+        <activity
+            android:name=".CountryListActivity"
+            android:label=""
+            android:theme="@style/AppTheme.Transparent.NoTitleBar"></activity>
+
+        <service
+            android:name="org.droidtv.defaultdashboard.recommended.RecommendationListenerService"
+            android:directBootAware="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="org.droidtv.defaultdashboard.recommended.listener"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="org.droidtv.defaultdashboard.recommended.RecommendationProviderService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.droidtv.defaultdashboard.recommended.RecommendationProviderService"/>
+            </intent-filter>
+
+        </service>
+
+        <service android:name="org.droidtv.defaultdashboard.oem.OemOnClickHandling">
+        </service>
+
+	<service android:name=".log.DdbLogService" android:enabled="true" android:exported="true">
+        <intent-filter>
+            <action android:name="org.droidtv.intent.ddb.enablelog" />
+        </intent-filter>
+    </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="org.droidtv.defaultdashboard.clonedataprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/clone_data_file_path"/>
+        </provider>
+
+        <receiver
+            android:name="org.droidtv.defaultdashboard.receiver.DashboardBroadcastReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="mtk.intent.tvremoteservice_ready"/>
+            </intent-filter>
+			<intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.droidtv.tv.tvpower.tv_power_boot_completed"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.droidtv.tv.tvpower.TV_POWER_STATE_CHANGE_BEGIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.intent.action.SMARTINFO_DOWNLOAD_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.droidtv.intent.action.clone.result.CSB"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.UsbEventsReceiver"
+            android:enabled="true"
+            android:exported="true">
+           <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.droidtv.tv.usbbreakin.ACTION_USB_BREAKOUT" />
+                <action android:name="org.droidtv.tv.usbbreakin.ACTION_USB_BREAKIN" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.AccountChangeReceiver">
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

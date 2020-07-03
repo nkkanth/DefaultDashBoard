@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lb_browse_header_unselect_alpha" type="fraction">100%</item>
+    <item name="lb_browse_header_select_scale" format="float" type="dimen">1.25</item>
+    <dimen name="lb_browse_row_hovercard_max_width">570dp</dimen>
+
+    <integer name="maximum_message_count_to_display">99</integer>
+    <bool name="enable_main_background">true</bool>
+    <bool name="enable_show_icon">true</bool>
+    <string name="menu_language_setting">Menu Language settings will be launched here</string>
+    <string name="hi">HI</string>
+    <bool name="enable_google_assistant_icon">false</bool>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/apps_chapter_country_header"
+            android:layout_width="@dimen/apps_chapter_country_header_width"
+            android:layout_height="@dimen/shelf_header_height"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/apps_chapter_country_header_margin_start"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/apps_chapter_country_icon_image_view"
+                android:layout_width="@dimen/apps_chapter_country_icon_image_width"
+                android:layout_height="@dimen/apps_chapter_country_icon_image_height"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/apps_chapter_country_title"
+                android:layout_width="@dimen/apps_chapter_country_title_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:layout_marginTop="@dimen/apps_chapter_country_shelf_header_title_margin_top"
+                android:textAppearance="@style/FontStyleMoreChapterIconTitleDefault" />
+
+        </LinearLayout>
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/apps_chapter_country_row_content"
+            style="?attr/rowHorizontalGridStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/apps_chapter_country_shelf_gridview_margin_start"
+            android:layout_toEndOf="@+id/apps_chapter_country_header"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="0dp"
+            android:paddingStart="@dimen/apps_chapter_row_content_country_padding_start"
+            android:paddingTop="0dp"
+            lb:rowHeight="wrap_content" />
+    </RelativeLayout>
+
+</merge>

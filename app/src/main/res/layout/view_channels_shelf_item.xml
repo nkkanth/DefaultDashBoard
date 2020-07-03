@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/shelf_item_image"
+        android:layout_width="@dimen/channels_shelf_item_width"
+        android:layout_height="@dimen/channels_shelf_item_height"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/lock_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="@dimen/tv_channels_chapter_sources_shelf_item_content_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/tv_channels_chapter_sources_shelf_item_content_text_margin_top"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_channels_chapter_sources_shelf_item_content_text_size" />
+
+    <ProgressBar
+        android:id="@+id/program_info_progress_bar"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="@dimen/program_duration_progressbar_width"
+        android:layout_height="@dimen/program_duration_progressbar_height"
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_program_duration"
+        android:visibility="gone" />
+
+</merge>
